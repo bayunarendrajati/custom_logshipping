@@ -3,7 +3,7 @@ $serverName = "DESKTOP-9DBS7KK\SQLEXPRESS"; //serverName\instanceName
 
 // Since UID and PWD are not specified in the $connectionInfo array,
 // The connection will be attempted using Windows Authentication.
-$connectionInfo = array( "Database"=>"UserData");
+$connectionInfo = array( "Database"=>"logshipped");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
 if( $conn ) {
