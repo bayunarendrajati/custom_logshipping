@@ -24,7 +24,7 @@
         </thead>
         <tbody>
         <?php
-        $log = sqlsrv_query($conn, 'SELECT TOP 10 [PMAG_LogBackupHistory].[BackupSetID], [PMAG_LogBackupHistory].[DatabaseName], [PMAG_LogBackupHistory].[BackupTime], [PMAG_LogRestoreHistory].[RestoreTime] FROM [UserData].[dbo].[PMAG_LogBackupHistory], [UserData].[dbo].[PMAG_LogRestoreHistory] WHERE [PMAG_LogBackupHistory].[BackupSetID] = [PMAG_LogRestoreHistory].[BackupSetID] ORDER BY [BackupTime] DESC');
+        $log = sqlsrv_query($conn, 'SELECT TOP 10 [PMAG_LogBackupHistory].[BackupSetID], [PMAG_LogBackupHistory].[DatabaseName], [PMAG_LogBackupHistory].[BackupTime], [PMAG_LogRestoreHistory].[RestoreTime] FROM [logshipped].[dbo].[PMAG_LogBackupHistory], [logshipped].[dbo].[PMAG_LogRestoreHistory] WHERE [PMAG_LogBackupHistory].[BackupSetID] = [PMAG_LogRestoreHistory].[BackupSetID] ORDER BY [BackupTime] DESC');
         while ($row = sqlsrv_fetch_array($log, SQLSRV_FETCH_ASSOC)) {
           ?>
         <tr>
