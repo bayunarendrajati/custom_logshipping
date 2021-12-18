@@ -115,3 +115,8 @@ Pada tab ```Conditions``` uncheck **Start the task only if the computer is on AC
 ![General conf](https://raw.githubusercontent.com/bayunarendrajati/custom_logshipping/master/img/5.jpg)
 
 #### 5. Run task
+
+## Penggunaan Web App
+
+Download file ```database.php``` dan ```index.php```, kemudian jalankan dengan web service.
+Aplikasi akan menampilkan 10 backup dan restore terakhir yang dilakukan oleh aplikasi custom logshipping
