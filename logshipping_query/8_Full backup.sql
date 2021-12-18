@@ -1,0 +1,1 @@
+EXEC dbo.PMAG_Backup @dbname = N'logshipped', @type = 'bak', @init = 1;
